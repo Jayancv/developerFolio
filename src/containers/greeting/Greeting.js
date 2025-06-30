@@ -14,18 +14,6 @@ export default function Greeting() {
   if (!greeting.displayGreeting) {
     return null;
   }
-  // Function to open the resume link in a new tab and trigger download
-  const handleDownloadResume = (e) => {
-    e.preventDefault();
-    const link = document.createElement("a");
-    link.href = greeting.resumeLink;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.download = "Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <Fade bottom duration={1000} distance="40px">
