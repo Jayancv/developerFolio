@@ -13,6 +13,20 @@ export default function StartupProject() {
     win.focus();
   }
 
+  const GetDescBullets = ({descBullets, isDark}) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+          <li
+            key={i}
+            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+            style={{ textAlign: "left" }}
+          >
+            {item}
+          </li>
+        ))
+      : null;
+  };
+
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -82,6 +96,10 @@ export default function StartupProject() {
                         })}
                       </div>
                     ) : null}
+
+                    <ul>
+                      <GetDescBullets descBullets={project.descBullets} isDark={isDark} />
+                  </ul>
                   </div>
                 </div>
               );

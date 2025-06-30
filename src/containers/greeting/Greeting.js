@@ -37,7 +37,17 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
-              <SocialMedia />
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                
+                <img
+                  alt="My Portrait"
+                  src={require("../../assets/images/myPortraits.png")}
+                  style={{ width: "200px",
+                    height: "200px",
+                    borderRadius: "50%", }}
+                />
+                <SocialMedia />
+              </div>
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
