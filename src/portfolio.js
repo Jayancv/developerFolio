@@ -229,7 +229,7 @@ const workExperiences = {
       descBullets: [
         "Internship with WSO2’s R&D team focused on data processing.",
         "Evaluated performance of machine learning algorithms for batch vs. streaming scenarios.",
-        "Provided insights that contributed to architectural decisions in WSO2\’s event processor platform for integrating Streaming ML tools."
+        "Provided insights that contributed to architectural decisions in WSO2’s event processor platform for integrating Streaming ML tools."
       ]
     }
   ]
