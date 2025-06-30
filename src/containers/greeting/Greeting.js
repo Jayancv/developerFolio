@@ -14,6 +14,19 @@ export default function Greeting() {
   if (!greeting.displayGreeting) {
     return null;
   }
+  // Function to open the resume link in a new tab and trigger download
+  const handleDownloadResume = (e) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = greeting.resumeLink;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.download = "Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -38,13 +51,14 @@ export default function Greeting() {
               </p>
               <div id="resume" className="empty-div"></div>
               <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                
                 <img
                   alt="My Portrait"
                   src={require("../../assets/images/myPortraits.png")}
-                  style={{ width: "200px",
+                  style={{
+                    width: "200px",
                     height: "200px",
-                    borderRadius: "50%", }}
+                    borderRadius: "50%",
+                  }}
                 />
                 <SocialMedia />
               </div>
@@ -52,9 +66,11 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={greeting.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="download-link-button"
+                    download="Resume.pdf"
                   >
                     <Button text="Download my resume" />
                   </a>
