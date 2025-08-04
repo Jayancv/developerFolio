@@ -23,7 +23,7 @@ const greeting = {
   username: "Jayan Vidanapathirana",
   title: "Hi all, I'm Jayan",
   subTitle: emoji(
-    "I'm a results-driven Backend Software Engineer with 6+ years of experience building reliable, scalable systems. With a strong Computer Science background and a Master’s degree in progress (completing July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for clean code, team collaboration, and a passion for learning, I thrive in fast-paced environments—and bring the same energy and curiosity to life outside of work as an avid adventurer."
+    "I'm a Software Engineer with 7+ years of experience (mostly backend) building reliable, scalable systems. With a strong Computer Science background and a recently completed a Master’s degree specialising in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for clean code, team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1-65Ed7cx1GYVWri9UGXF6govxz4pc7pz/view?usp=sharing", // Set to empty to hide the button
@@ -360,7 +360,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "IEEExtream 10.0",
+      title: "IEEExtream 10.0 - 2016",
       subtitle: "IEEExtream 10.0 competition, island rank 20 (TeamJinx)",
       // image: require("./assets/images/pwaLogo.webp"),
       // imageAlt: "PWA Logo",
