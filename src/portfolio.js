@@ -26,7 +26,7 @@ const greeting = {
     "I'm a Software Engineer with 7+ years of experience (mostly backend) building reliable, scalable systems. With a strong Computer Science background and a recently completed a Master’s degree specialising in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for clean code, team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1-65Ed7cx1GYVWri9UGXF6govxz4pc7pz/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1zJqjvuHbedbSijk5bVCWPtED6aqlA_rF/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
