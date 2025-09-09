@@ -328,11 +328,31 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {title: "AWS Solution Architect - Associate",
+      subtitle:
+        "Achieved AWS Solution Architect - Associate certification.",
+      image: require("./assets/images/aws-certified-solutions-architect-associate.png"),
+      imageAlt: "badge",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.credly.com/badges/c3220a4c-4df3-499d-acf5-d0972bb5aa2d/public_url"
+        },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
     {
       title: "Sri Lankan Physics Olympiad - 2012",
       subtitle:
         "Won the Sri Lankan Physics Olympiad Gold medal.",
-      // image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/SLPH.png"),
       // imageAlt: "Google Code-In Logo",
       footerLink: [
         // {
@@ -353,7 +373,7 @@ const achievementSection = {
       title: "International Physics Olympiad - 2012",
       subtitle:
         "Represented Asian and international physics Olympiad competition in 2013 in Indonesia and Denmark.",
-      // image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/IPhO-2013-logo.png"),
       // imageAlt: "Google Assistant Action Logo",
       footerLink: [
      
@@ -362,7 +382,7 @@ const achievementSection = {
     {
       title: "IEEExtream 10.0 - 2016",
       subtitle: "IEEExtream 10.0 competition, island rank 20 (TeamJinx)",
-      // image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/LogoXtreme16.png"),
       // imageAlt: "PWA Logo",
       footerLink: [
         // {name: "Certification", url: ""},
