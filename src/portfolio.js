@@ -23,7 +23,7 @@ const greeting = {
   username: "Jayan Vidanapathirana",
   title: "Hi all, I'm Jayan",
   subTitle: emoji(
-    "I'm a Software Engineer with 7+ years of experience, primarily in backend development, building reliable and scalable systems. With a strong Computer Science background and a recently completed Master’s degree specializing in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for writing clean code, strong team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer."
+    "I'm a Software Engineer with 7+ years of experience, primarily in backend development, building reliable and scalable systems. With a strong Computer Science background and a recently completed Master’s degree specializing in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for writing clean code, strong team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer. Available in Finland 🇫🇮 & Germany 🇩🇪 with work seeking visa."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1zJqjvuHbedbSijk5bVCWPtED6aqlA_rF/view?usp=sharing", // Set to empty to hide the button
@@ -185,6 +185,17 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Software Engineer",
+      company: "PromisQ (Berlin)",
+      companylogo: require("./assets/images/promiseq_logo.png"),
+      date: "Oct 2025 – Jan 2026",
+      descBullets: [
+        "Designed and developed an event-driven microservices from scratch to deployment, implementing real-time notification handling to power a scalable video surveillance alert system for a Berlin-based startup.",
+        "Built a Python FastAPI microservice from scratch, handling end-to-end event notification flow including REST API layer, service logic, and deployment.",
+        "Implemented a Kafka consumer pipeline to process high-throughput surveillance event streams and an MQTT publisher to distribute real-time alerts to downstream clients."
+      ]
+    },
     {
       role: "Research Assistant",
       company: "University of Helsinki",
