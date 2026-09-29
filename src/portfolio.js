@@ -390,6 +390,46 @@ const achievementSection = {
         // }
       ]
     },
+    {title: "Certified ScrumMaster (CSM)",
+      subtitle:
+        "Certified ScrumMaster (CSM) certification - 7 years of experience of Scrum and Scrum master training.",
+      image: require("./assets/images/CSM.webp"),
+      imageAlt: "badge",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://app.badgecert.com/public/badges/oisjobbt"
+        },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {title: "AWS Certified AI Practitioner",
+      subtitle:
+        "Achieved AWS Certified AI Practitioner certification.",
+      image: require("./assets/images/AI_Practitioner.png"),
+      imageAlt: "badge",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/bb655bfd343548eda0463ea85f7b12ec"
+        },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
     {
       title: "Sri Lankan Physics Olympiad - 2012",
       subtitle:
