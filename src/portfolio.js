@@ -26,7 +26,7 @@ const greeting = {
     "I'm a Software Engineer with 7+ years of experience, primarily in backend development, building reliable and scalable systems. With a strong Computer Science background and a recently completed Master’s degree specializing in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for writing clean code, strong team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer. Available in Finland 🇫🇮 & Germany 🇩🇪 with work seeking visa."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1zJqjvuHbedbSijk5bVCWPtED6aqlA_rF/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1trvRvT8Ai0vX9smNEJdI6m5c5gOqODFH/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -186,6 +186,17 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Summer Developer",
+      company: "Reaktor",
+      companylogo: require("./assets/images/reaktor.jpg"),
+      date: "June 2026 – Sept 2026",
+      descBullets: [
+        "Delivered client work in a software consultancy, supporting Admares through the MVP phase of an edge-first smart-home platform built for large-scale residential delivery.",
+        "Owned features end to end, from clarifying requirements with client stakeholders through implementation, validation and handover, across backend services, integrations and the user interface.",
+        "Worked in a lean cross-functional Scrum team, balancing iterative delivery with structured planning to keep scope, quality and timelines on track toward production readiness."
+      ]
+    },
+    {
       role: "Software Engineer",
       company: "PromisQ (Berlin)",
       companylogo: require("./assets/images/promiseq_logo.png"),
@@ -261,6 +272,25 @@ const bigProjects = {
   subtitle: "HERE ARE SOME PROJECTS THAT ARE OPEN TO THE PUBLIC FOR VIEWING",
   projects: [
     {
+      image: require("./assets/images/admares.png"),
+      projectName: "Admares Smart Home Platform",
+      projectDesc: "Built an edge-first platform that monitors and controls household devices locally, keeping device control available without internet connectivity.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://admares.com/smart-home-technology/"
+        }
+        //  you can add extra buttons here.
+      ],
+      descBullets: [
+        "Developed TypeScript services that integrate hardware over MQTT and REST. Extended the platform with Bosch Home Connect cloud integration and notification workflows.",
+        "Built the React interface for wall-mounted kiosk tablets, with responsive layouts and notification UX.",
+        "Packaged services with Docker and configured CI pipelines for repeatable deployments to edge hardware.",
+        "Used Claude Code with custom subagents, skills and MCP servers to speed up development, and reviewed all generated code, pull requests and architecture documentation"
+        
+      ]
+    },
+    {
       image: require("./assets/images/tbx_rect.png"),
       projectName: "TravelBox™",
       projectDesc: "Worked on various aspects of enhancing TravelBox for Flight Centre (https://www.fctgl.com/) and one of the largest theme park chain while working with CodeGen.",
@@ -272,9 +302,10 @@ const bigProjects = {
         //  you can add extra buttons here.
       ],
       descBullets: [
-        "Third party system integeration to TravelBox reservation system. (TourRadar, Travolutionary, Amadeus ...)",
-        "Improved the performance of batch jobs and optimized database queries.",
-        "Initiated new Tour H2H system integeration to Booking platform.",
+        "Designed and delivered RESTful APIs for web front ends and external consumers, integrating TourRadar, Travolutionary, Amadeus and Livn into the TravelBox™ platform, from concept to production.",
+        "Built features across Hotel, Tour, Car, Flight and Insurance domains, including financial modules, performance and third-party integrations.",
+        "Developed and tested Java back-end services and Swing UIs, optimised scheduler jobs and complex SQL queries, and implemented Redis caching and RabbitMQ messaging.",
+        "Resolved production issues, including on-site support, and handled Spring releases end to end, reducing release delays and production risk."
         
       ]
     },
@@ -413,7 +444,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
