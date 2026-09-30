@@ -235,7 +235,6 @@ const workExperiences = {
       company: "CodeGen International",
       companylogo: require("./assets/images/cmp_codegen.jpg"),
       date: "Jan 2018 – Dec 2021",
-      desc: "Worked as a software develepment engineer",
       descBullets: [
         "I joined the company’s largest engagement at that time—the 120-member TravelBox™ development team—tasked with enhancing our travel-management platform for an international client (One of the world largest theme park).",
         "I was directly involved in designing, developing, and delivering functional-gap fixes and change-request solutions using Java, Spring, Oracle, and both SOAP and REST APIs, while also maintaining Swing-based desktop applications.",

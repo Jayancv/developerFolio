@@ -18,8 +18,10 @@
   line-height: 1.5rem;
 }
 .project-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   background-color: $lightBackground2;
   padding: 1.5rem;
   border-radius: 10px;
@@ -42,6 +44,26 @@
 
 .project-detail {
   text-align: center;
+  display: contents;
+}
+// Shared row tracks keep image, title, subtitle, links and bullets aligned across cards
+.project-card .project-image {
+  grid-row: 1;
+}
+.project-card .card-title {
+  grid-row: 2;
+  text-align: center;
+}
+.project-card .card-subtitle {
+  grid-row: 3;
+  text-align: center;
+}
+.project-card .project-card-footer {
+  grid-row: 4;
+  text-align: center;
+}
+.project-card ul {
+  grid-row: 5;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
