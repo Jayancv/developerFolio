@@ -417,7 +417,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/bb655bfd343548eda0463ea85f7b12ec"
+          url: "https://www.credly.com/earner/earned/badge/47db7d3c-48f4-49a9-993a-920f303ef1c0"
         },
         // {
         //   name: "Award Letter",
