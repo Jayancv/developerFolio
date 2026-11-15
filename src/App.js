@@ -1,13 +1,33 @@
 import React from "react";
-import "./App.scss";
-import Main from "./containers/Main";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Main />
-    </div>
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Certifications />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;

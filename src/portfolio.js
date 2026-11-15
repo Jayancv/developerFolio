@@ -1,196 +1,111 @@
-/* Change this file to get your personal Portfolio */
+/*
+ * All portfolio content lives here. Edit this file to update the site.
+ * Set `display: false` on any section to hide it.
+ */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
-
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
-const greeting = {
-  username: "Jayan Vidanapathirana",
-  title: "Hi all, I'm Jayan",
-  subTitle: emoji(
-    "I'm a Software Engineer with 7+ years of experience, primarily in backend development, building reliable and scalable systems. With a strong Computer Science background and a recently completed Master’s degree specializing in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges. Known for writing clean code, strong team collaboration, and a passion for learning, I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer. Available in Finland 🇫🇮 & Germany 🇩🇪 with work seeking visa."
-  ),
+const profile = {
+  name: "Jayan Vidanapathirana",
+  shortName: "Jayan",
+  role: "Software Engineer · Backend",
+  headline: "I build reliable, scalable backend systems.",
+  intro:
+    "Software Engineer with 7+ years of experience, primarily in backend development. MSc in Computer Science (Software Engineering) from the University of Helsinki.",
+  location: "Helsinki, Finland",
+  availability: "Open to roles in Finland & Germany · relocation & remote",
+  portrait: require("./assets/images/myPortraits.png"),
   resumeLink:
-    "https://drive.google.com/file/d/1trvRvT8Ai0vX9smNEJdI6m5c5gOqODFH/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1trvRvT8Ai0vX9smNEJdI6m5c5gOqODFH/view?usp=sharing",
+  email: "jcvidanapathirana@gmail.com"
 };
 
-// Social Media Links
-
-const socialMediaLinks = {
-  github: "https://github.com/jayancv",
-  linkedin: "https://www.linkedin.com/in/jayancv/",
-  gmail: "jcvidanapathirana@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/jayan.vidanapathirana/",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
-};
-
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
-  subTitle: "BACKEND-FOCUSED DEVELOPER EAGER TO EXPAND EXPERTISE ACROSS THE ENTIRE TECH STACK, INCLUDING FRONTEND AND DEVOPS",
-  skills: [
-    emoji("⚡ Design and Develop scalable, high proformance system backedns"),
-    emoji("⚡ Design REST APIs for frontend and API users"),
-    emoji("⚡ Integration of third party systems")
+const about = {
+  display: true,
+  paragraphs: [
+    "I'm a Software Engineer with 7+ years of experience, primarily in backend development, building reliable and scalable systems. With a strong Computer Science background and a Master's degree specialising in Software Engineering (July 2025), I bring a proactive, self-motivated approach to solving complex backend challenges.",
+    "I'm known for writing clean code, strong team collaboration and a passion for learning. I thrive in fast-paced environments and bring the same energy and curiosity to life outside of work as an avid adventurer."
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "SQL (Oracle)",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    },
-    {
-      skillName: "Java Spring framework",
-      fontAwesomeClassname: "fab fa-java"
-    },
-  ],
-
-  handsOnExp: [
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Angular",
-      fontAwesomeClassname: "fab fa-angular"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-dharmachakra"
-    },
-    {
-      skillName: "PHP",
-      fontAwesomeClassname: "fab fa-php"
-    },
-    {
-      skillName: "Apache Kafka",
-      fontAwesomeClassname: "fab fa-kafka"
-    }
-  
-  ], 
-  display: true // Set false to hide this section, defaults to true
+  highlights: [
+    {value: "7+", label: "Years of experience"},
+    {value: "MSc", label: "Software Engineering"},
+    {value: "3", label: "Certifications"}
+  ]
 };
 
-// Education Section
+const socialLinks = [
+  {name: "GitHub", url: "https://github.com/jayancv", icon: "fab fa-github"},
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/jayancv/",
+    icon: "fab fa-linkedin-in"
+  },
+  {
+    name: "Email",
+    url: "mailto:jcvidanapathirana@gmail.com",
+    icon: "fas fa-envelope"
+  }
+];
 
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
+const skills = {
+  display: true,
+  title: "Skills",
+  subtitle:
+    "Backend-focused, and expanding across the stack into frontend and DevOps.",
+  focus: [
+    "Designing and developing scalable, high-performance backend systems",
+    "Designing REST APIs for frontends and external API consumers",
+    "Integrating third-party systems"
+  ],
+  groups: [
     {
-      schoolName: "University of Helsinki",
-      logo: require("./assets/images/edu-UniversityOfHelsinkiSq.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "Auguest 2023 - July 2025",
-      desc: "Specialized in Software Engineering stream",
-      descBullets: [
-        "Masters Thesis - Diagram Generation with LLMs",
-        "Tutor for international Computer Science Masters students in 2024"
+      name: "Core",
+      items: [
+        "Java",
+        "Spring",
+        "Python",
+        "FastAPI",
+        "SQL (Oracle, MySQL)",
+        "REST & SOAP APIs",
+        "Git"
       ]
     },
     {
-      schoolName: "University of Moratuwa",
-      logo: require("./assets/images/edu-UniversityOfMoratuwaSq.png"),
-      subHeader: "Bachelor of Science of Engineering",
-      duration: "February 2014 - December 2017",
-      desc: "Specialized in Computer Science and Engineering",
-      descBullets: ["GPA : 3.71/4.2 - First Class"]
+      name: "Messaging & Infra",
+      items: [
+        "Apache Kafka",
+        "RabbitMQ",
+        "MQTT",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "CI/CD"
+      ]
+    },
+    {
+      name: "Also worked with",
+      items: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Angular",
+        "Node.js",
+        "PHP / Laravel",
+        "LLMs & RAG"
+      ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Backend",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Fullstack",
-      progressPercentage: "50%"
-    },
-    {
-      Stack: "Frontend/Design", 
-      progressPercentage: "30%"  
-    },
-    {
-      Stack: "DevOps",  
-      progressPercentage: "25%"  
-    },
-    {
-      Stack: "Data engineering", 
-      progressPercentage: "25%" 
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
+const experience = {
+  display: true,
+  title: "Experience",
+  items: [
     {
       role: "Summer Developer",
       company: "Reaktor",
-      companylogo: require("./assets/images/reaktor.jpg"),
-      date: "June 2026 – Sept 2026",
-      descBullets: [
+      logo: require("./assets/images/reaktor.jpg"),
+      date: "Jun 2026 – Sep 2026",
+      bullets: [
         "Delivered client work in a software consultancy, supporting Admares through the MVP phase of an edge-first smart-home platform built for large-scale residential delivery.",
         "Owned features end to end, from clarifying requirements with client stakeholders through implementation, validation and handover, across backend services, integrations and the user interface.",
         "Worked in a lean cross-functional Scrum team, balancing iterative delivery with structured planning to keep scope, quality and timelines on track toward production readiness."
@@ -199,383 +114,226 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "PromisQ (Berlin)",
-      companylogo: require("./assets/images/promiseq_logo.png"),
+      logo: require("./assets/images/promiseq_logo.png"),
       date: "Oct 2025 – Jan 2026",
-      descBullets: [
-        "Designed and developed an event-driven microservices from scratch to deployment, implementing real-time notification handling to power a scalable video surveillance alert system for a Berlin-based startup.",
-        "Built a Python FastAPI microservice from scratch, handling end-to-end event notification flow including REST API layer, service logic, and deployment.",
+      bullets: [
+        "Designed and developed event-driven microservices from scratch to deployment, implementing real-time notification handling to power a scalable video-surveillance alert system for a Berlin-based startup.",
+        "Built a Python FastAPI microservice from scratch, handling the end-to-end event notification flow including the REST API layer, service logic and deployment.",
         "Implemented a Kafka consumer pipeline to process high-throughput surveillance event streams and an MQTT publisher to distribute real-time alerts to downstream clients."
       ]
     },
     {
       role: "Research Assistant",
       company: "University of Helsinki",
-      companylogo: require("./assets/images/edu_uoh_white.png"),
+      logo: require("./assets/images/edu_uoh_white.png"),
       date: "Aug 2024 – Dec 2024",
-      descBullets: [
-        "Joined the Empirical Software Engineering research group at the University of Helsinki as a Research Assistant.",
-        "Designed and developed a software artifact that generates Engineering Process Diagrams using LLMs.",
-        "Contributed to the group's research on LLM applications in software engineering by demonstrating a novel use case for automated diagram generation and adapted that research to my Master’s thesis."
+      bullets: [
+        "Joined the Empirical Software Engineering research group as a Research Assistant.",
+        "Designed and developed a software artifact that generates engineering process diagrams using LLMs.",
+        "Contributed to the group's research on LLM applications in software engineering by demonstrating a novel use case for automated diagram generation, and adapted that research into my Master's thesis."
       ]
     },
     {
       role: "Technical Team Lead",
       company: "CodeGen International",
-      companylogo: require("./assets/images/cmp_codegen.jpg"),
+      logo: require("./assets/images/cmp_codegen.jpg"),
       date: "Jan 2022 – May 2025",
-      descBullets: [
-        "As Lead of the 3rd-party H2H API Integration sub-team for CodeGen’s flagship Flight Centre Project—our largest global engagement.",
-        "I orchestrated the 3rd party system integration strategy, coordinated roll-outs across multiple regions, and ensured on-time, successful delivery to globle clients.",
-        "As a mentor, I have groomed my juniors within the last 2 years.",
-        "Since September 2023 to May 2025, I have been working as a part-time contracted employee for CodeGen."
+      bullets: [
+        "Led the third-party H2H API integration sub-team for CodeGen's flagship Flight Centre project, the company's largest global engagement.",
+        "Orchestrated the third-party integration strategy, coordinated roll-outs across multiple regions and ensured on-time delivery to global clients.",
+        "Mentored and grew junior engineers over two years.",
+        "From September 2023 to May 2025, continued as a part-time contracted engineer while completing my Master's."
       ]
     },
     {
       role: "Software Engineer",
       company: "CodeGen International",
-      companylogo: require("./assets/images/cmp_codegen.jpg"),
+      logo: require("./assets/images/cmp_codegen.jpg"),
       date: "Jan 2018 – Dec 2021",
-      descBullets: [
-        "I joined the company’s largest engagement at that time—the 120-member TravelBox™ development team—tasked with enhancing our travel-management platform for an international client (One of the world largest theme park).",
-        "I was directly involved in designing, developing, and delivering functional-gap fixes and change-request solutions using Java, Spring, Oracle, and both SOAP and REST APIs, while also maintaining Swing-based desktop applications.",
-        "Partnering with the Rapid Response team to monitor functional and non-functional issues after major releases in the production environment.",
-        "Following the initial production rollout, I spent two months onsite(Paris) troubleshooting critical issues and triaging defects, which significantly improved system stability, accelerated subsequent rollout schedules, and strengthened client confidence in our delivery capabilities."
+      bullets: [
+        "Joined the 120-member TravelBox™ team, enhancing the travel-management platform for one of the world's largest theme-park operators.",
+        "Designed, developed and delivered functional-gap fixes and change requests using Java, Spring, Oracle, and SOAP and REST APIs, while maintaining Swing-based desktop applications.",
+        "Partnered with the Rapid Response team to monitor functional and non-functional issues after major production releases.",
+        "Spent two months on-site in Paris after the initial rollout, troubleshooting critical issues and triaging defects, which improved stability, accelerated later rollouts and strengthened client confidence."
       ]
     },
     {
       role: "Software Engineer Intern",
       company: "WSO2",
-      companylogo: require("./assets/images/cmp_wso2_white.png"),
+      logo: require("./assets/images/cmp_wso2_white.png"),
       date: "Jul 2016 – Dec 2016",
-      descBullets: [
-        "Internship with WSO2’s R&D team focused on data processing.",
-        "Evaluated performance of machine learning algorithms for batch vs. streaming scenarios.",
-        "Provided insights that contributed to architectural decisions in WSO2’s event processor platform for integrating Streaming ML tools."
+      bullets: [
+        "Interned with WSO2's R&D team focused on data processing.",
+        "Evaluated the performance of machine-learning algorithms in batch vs. streaming scenarios.",
+        "Provided insights that informed architectural decisions for integrating streaming ML tools into WSO2's event processor platform."
       ]
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
+const projects = {
+  display: true,
   title: "Projects",
-  subtitle: "HERE ARE SOME PROJECTS THAT ARE OPEN TO THE PUBLIC FOR VIEWING",
-  projects: [
+  subtitle: "Selected work from industry, research and university.",
+  items: [
     {
+      name: "Admares Smart Home Platform",
+      context: "Reaktor · 2026",
       image: require("./assets/images/admares.png"),
-      projectName: "Admares Smart Home Platform",
-      projectDesc: "Built an edge-first platform that monitors and controls household devices locally, keeping device control available without internet connectivity.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://admares.com/smart-home-technology/"
-        }
-        //  you can add extra buttons here.
+      description:
+        "An edge-first platform that monitors and controls household devices locally, keeping device control available without internet connectivity.",
+      bullets: [
+        "TypeScript services integrating hardware over MQTT and REST, plus Bosch Home Connect cloud integration and notification workflows.",
+        "React interface for wall-mounted kiosk tablets with responsive layouts and notification UX.",
+        "Docker packaging and CI pipelines for repeatable deployments to edge hardware.",
+        "Used Claude Code with custom subagents, skills and MCP servers to speed up development, reviewing all generated code, pull requests and architecture docs."
       ],
-      descBullets: [
-        "Developed TypeScript services that integrate hardware over MQTT and REST. Extended the platform with Bosch Home Connect cloud integration and notification workflows.",
-        "Built the React interface for wall-mounted kiosk tablets, with responsive layouts and notification UX.",
-        "Packaged services with Docker and configured CI pipelines for repeatable deployments to edge hardware.",
-        "Used Claude Code with custom subagents, skills and MCP servers to speed up development, and reviewed all generated code, pull requests and architecture documentation"
-        
+      tags: ["TypeScript", "React", "MQTT", "Docker"],
+      links: [
+        {name: "Website", url: "https://admares.com/smart-home-technology/"}
       ]
     },
     {
+      name: "TravelBox™",
+      context: "CodeGen · 2018–2025",
       image: require("./assets/images/tbx_rect.png"),
-      projectName: "TravelBox™",
-      projectDesc: "Worked on various aspects of enhancing TravelBox for Flight Centre (https://www.fctgl.com/) and one of the largest theme park chain while working with CodeGen.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://codegen.co.uk/travelbox-platform/"
-        }
-        //  you can add extra buttons here.
+      description:
+        "Enhancing the TravelBox™ travel platform for Flight Centre and one of the largest theme-park chains.",
+      bullets: [
+        "REST APIs for web frontends and external consumers, integrating TourRadar, Travolutionary, Amadeus and Livn from concept to production.",
+        "Features across Hotel, Tour, Car, Flight and Insurance domains, including financial modules and performance work.",
+        "Java services and Swing UIs, optimised scheduler jobs and complex SQL, Redis caching and RabbitMQ messaging.",
+        "Production support including on-site work, and end-to-end release handling that reduced delays and risk."
       ],
-      descBullets: [
-        "Designed and delivered RESTful APIs for web front ends and external consumers, integrating TourRadar, Travolutionary, Amadeus and Livn into the TravelBox™ platform, from concept to production.",
-        "Built features across Hotel, Tour, Car, Flight and Insurance domains, including financial modules, performance and third-party integrations.",
-        "Developed and tested Java back-end services and Swing UIs, optimised scheduler jobs and complex SQL queries, and implemented Redis caching and RabbitMQ messaging.",
-        "Resolved production issues, including on-site support, and handled Spring releases end to end, reducing release delays and production risk."
-        
+      tags: ["Java", "Spring", "Oracle", "Redis", "RabbitMQ"],
+      links: [
+        {name: "Website", url: "https://codegen.co.uk/travelbox-platform/"}
       ]
     },
     {
-      // image: require("./assets/images/llm_diagrams.png"),
-      projectName: "Engineering Process Diagram Generation with Large Language Models",
-      projectDesc: "Master's thesis research project (2024-2025)",
-      footerLink: [
-        {
-          name: "Visit Github",
-          url: "https://github.com/Jayancv/PIGenerator"
-        }
+      name: "Engineering Diagram Generation with LLMs",
+      context: "Master's thesis · 2024–2025",
+      description:
+        "Generating Piping and Instrumentation Diagrams (P&IDs) from textual specifications using LLMs and retrieval-augmented generation.",
+      bullets: [
+        "Python application combining a RAG system and LLMs with a third-party diagram-generation tool.",
+        "Demonstrated the feasibility of LLM-driven diagram automation and laid groundwork for further research."
       ],
-      descBullets:[
-        "As part of my Master’s thesis within the Empirical Software Engineering research group, I joined an existing project to investigate automated engineering diagram generation.",
-        "I developed a Python-based application that integrates a retrieval-augmented generation (RAG) system with a third-party diagram-generation tool, LLMs to produce Piping and Instrumentation Diagram (P&IDs) from textual specifications.",
-        "The prototype demonstrated the feasibility of LLM-driven diagram automation, streamlining documentation workflows and laying the groundwork for further research into RAG-enhanced engineering tools."
-      ]
+      tags: ["Python", "LLMs", "RAG"],
+      links: [{name: "GitHub", url: "https://github.com/Jayancv/PIGenerator"}]
     },
     {
-      projectName: "Real-Time Human Movement Analytics Using Multiple Non-Invasive Video Feeds",
-      projectDesc: "Bachelor’s Final-Year Group Project (2017)",
-      footerLink: [
+      name: "Real-Time Human Movement Analytics",
+      context: "Bachelor's final-year project · 2017",
+      description:
+        "Real-time ground-plane analytics of human movement from multiple non-invasive video feeds.",
+      bullets: [
+        "C++/Python multi-camera pipeline with OpenCV, integrating OpenPose/Caffe for pose estimation.",
+        "Java/Spring backend for data aggregation and visualisation, supporting simultaneous real-time feeds."
+      ],
+      tags: ["C++", "Python", "OpenCV", "Spring"],
+      links: [
         {
-          name: "Visit Github",
+          name: "GitHub",
           url: "https://github.com/eduze/OpenPosePersonDetector"
         }
+      ]
+    },
+    {
+      name: "Postgraduate Administration System",
+      context: "Undergraduate project for SLIDA · 2016",
+      description:
+        "A web system for SLIDA's School of Postgraduate Studies to manage registrations, exam results and finances.",
+      bullets: [
+        "Registration, exam-results and finance modules built with Laravel and MySQL, replacing paper-based workflows."
       ],
-      descBullets:[
-        "Bachelor’s Final-Year Group Project – Real-Time Ground-Plane Human Movement Analytics.",
-        "Create real-time analytics of human movement on the ground plane; address screen-space limits and poor multi-camera scalability.",
-        "Built a C++/Python multi-camera pipeline with OpenCV and Integrated OpenPose/Caffe for pose estimation.",
-        "Developed a Java/Spring backend for data aggregation & visualization.",
-        "Delivered a scalable prototype supporting simultaneous feeds in real time, with markedly improved spatial accuracy."
-      ]
-    },
-    {
-      projectName: "Administration Support System for School of Postgraduate Studies",
-      projectDesc: "Undergraduate project for SLIDA (2016)",
-      // footerLink: [
-      //   {
-      //     name: "Visit Github",
-      //     url: "https://github.com/Jayancv/PIGenerator"
-      //   }
-      // ],
-      descBullets:[
-        "Develop a web-based system for the School of Postgraduate Studies (SPS) at SLIDA to manage student registration, exam results, and financial records.",
-        "Designed and implemented registration, exam-results, and finance modules using PHP with the Laravel framework. Structured and optimized data storage in MySQL and built responsive HTML interfaces. Tech: PHP, MySQL, Laravel, HTML",
-        "Centralized student data workflows, eliminated paper-based processes, and improved data accuracy and accessibility for administrators and students alike."
-      ]
+      tags: ["PHP", "Laravel", "MySQL"],
+      links: []
     }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  ]
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {title: "AWS Solution Architect - Associate",
-      subtitle:
-        "Achieved AWS Solution Architect - Associate certification.",
+const certifications = {
+  display: true,
+  title: "Certifications & Achievements",
+  items: [
+    {
+      title: "AWS Certified Solutions Architect – Associate",
+      issuer: "Amazon Web Services",
       image: require("./assets/images/aws-certified-solutions-architect-associate.png"),
-      imageAlt: "badge",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.credly.com/badges/c3220a4c-4df3-499d-acf5-d0972bb5aa2d/public_url"
-        },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
+      url: "https://www.credly.com/badges/c3220a4c-4df3-499d-acf5-d0972bb5aa2d/public_url"
     },
-    {title: "Certified ScrumMaster (CSM)",
-      subtitle:
-        "Certified ScrumMaster (CSM) certification - 7 years of experience of Scrum and Scrum master training.",
-      image: require("./assets/images/CSM.webp"),
-      imageAlt: "badge",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://app.badgecert.com/public/badges/oisjobbt"
-        },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
-    },
-    {title: "AWS Certified AI Practitioner",
-      subtitle:
-        "Achieved AWS Certified AI Practitioner certification.",
+    {
+      title: "AWS Certified AI Practitioner",
+      issuer: "Amazon Web Services",
       image: require("./assets/images/AI_Practitioner.png"),
-      imageAlt: "badge",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.credly.com/badges/47db7d3c-48f4-49a9-993a-920f303ef1c0/public_url"
-        },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
+      url: "https://www.credly.com/badges/47db7d3c-48f4-49a9-993a-920f303ef1c0/public_url"
     },
     {
-      title: "Sri Lankan Physics Olympiad - 2012",
-      subtitle:
-        "Won the Sri Lankan Physics Olympiad Gold medal.",
-      image: require("./assets/images/SLPH.png"),
-      // imageAlt: "Google Code-In Logo",
-      footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        // },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
+      title: "Certified ScrumMaster (CSM)",
+      issuer: "7 years of hands-on Scrum experience",
+      image: require("./assets/images/CSM.webp"),
+      url: "https://app.badgecert.com/public/badges/oisjobbt"
     },
     {
-      title: "International Physics Olympiad - 2012",
-      subtitle:
-        "Represented Asian and international physics Olympiad competition in 2013 in Indonesia and Denmark.",
-      image: require("./assets/images/IPhO-2013-logo.png"),
-      // imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-     
-      ]
+      title: "IEEEXtreme 10.0",
+      issuer: "Island rank 20 · Team Jinx · 2016",
+      image: require("./assets/images/LogoXtreme16.png")
     },
     {
-      title: "IEEExtream 10.0 - 2016",
-      subtitle: "IEEExtream 10.0 competition, island rank 20 (TeamJinx)",
-      image: require("./assets/images/LogoXtreme16.png"),
-      // imageAlt: "PWA Logo",
-      footerLink: [
-        // {name: "Certification", url: ""},
-        // {
-        //   name: "Final Project",
-        //   url: "https://pakistan-olx-1.firebaseapp.com/"
-        // }
-      ]
+      title: "International Physics Olympiad",
+      issuer:
+        "Asian & International Physics Olympiads · Indonesia & Denmark · 2013",
+      image: require("./assets/images/IPhO-2013-logo.png")
+    },
+    {
+      title: "Sri Lankan Physics Olympiad",
+      issuer: "Gold medal · 2012",
+      image: require("./assets/images/SLPH.png")
     }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  ]
 };
 
-// Blogs Section
+const education = {
+  display: true,
+  title: "Education",
+  items: [
+    {
+      school: "University of Helsinki",
+      logo: require("./assets/images/edu-UniversityOfHelsinkiSq.png"),
+      degree: "MSc in Computer Science",
+      date: "Aug 2023 – Jul 2025",
+      detail: "Software Engineering specialisation",
+      bullets: [
+        "Thesis: Diagram Generation with LLMs",
+        "Tutor for international Computer Science Master's students (2024)"
+      ]
+    },
+    {
+      school: "University of Moratuwa",
+      logo: require("./assets/images/edu-UniversityOfMoratuwaSq.png"),
+      degree: "BSc Engineering",
+      date: "Feb 2014 – Dec 2017",
+      detail: "Computer Science and Engineering",
+      bullets: ["GPA 3.71 / 4.2 · First Class Honours"]
+    }
+  ]
+};
 
-const blogSection = {
-  title: "Blogs",
+const contact = {
+  title: "Let's work together",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+    "Have a role, a project, or just want to say hi? My inbox is always open."
 };
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: false // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  // number: "+92-0000000000",
-  email_address: "jcvidanapathirana@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
-};
-
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  profile,
+  about,
+  socialLinks,
+  skills,
+  experience,
+  projects,
+  certifications,
+  education,
+  contact
 };
